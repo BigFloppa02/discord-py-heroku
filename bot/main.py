@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = "ENV_TOKEN"
+TOKEN = "ODM4NzIxMjIxNjQxMjQwNjE2.YI_OAQ.M3dKR83S6x0wBoaeUSs5kmcJc24"
 
 bot = commands.Bot(command_prefix=(':otter:'))
 bot.remove_command( 'help' )

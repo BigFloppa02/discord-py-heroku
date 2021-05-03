@@ -1,16 +1,18 @@
-import os
+import discord
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix="!")
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = "ENV_TOKEN"
+
+bot = commands.Bot(command_prefix=(':otter:'))
+bot.remove_command( 'help' )
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user.name}({bot.user.id})")
+    print("Я даун!")
 
 @bot.command()
-async def ping(ctx):
-    await ctx.send("pong")
+async def Пошелнахуй(ctx):
+    await ctx.send('Самопошел')
 
-if __name__ == "__main__":
-    bot.run(TOKEN)
+
+bot.run(TOKEN)
